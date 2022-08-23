@@ -1,0 +1,28 @@
+.tabs {
+  // .tabs__navigation
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    column-gap: rem(53);
+    @include adaptiveValue("margin-bottom", 35, 20);
+	 margin-bottom: rem(35);
+  }
+  // .tabs__title
+  &__title {
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 17, 14);
+    line-height: 150%;
+    &._tab-active {
+      border-bottom: 2px solid #c80000;
+      opacity: 1;
+    }
+  }
+  // .tabs__content
+  &__content {
+  }
+  // .tabs__body
+  &__body {
+  }
+}

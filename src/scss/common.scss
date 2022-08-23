@@ -1,0 +1,14 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+  position: relative;
+  padding: 16px 34px;
+  border-radius: 27px;
+  transition: all 0.3s ease 0s;
+  background-color: #c80000;
+  display: inline-block;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #c800007c;
+    }
+  }
+}

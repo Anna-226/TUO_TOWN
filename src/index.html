@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="main-slider">
+					<!-- Оболочка слайдера -->
+					<div class="main-slider__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="main-slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="main-slider__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<img src="@img/main-page/slider/slide2.jpg" alt="">
+									<div class="swiper-slide__container swiper-slide__container_slide">
+										<h3 class="swiper-slide__title">Исключительное качество без компромиссов</h3>
+										<p class="swiper-slide__text">Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства</p>
+										<a href="" class="swiper-slide__button">ПОДРОБНЕЕ</a>
+										<div class="swiper-slide__hidden">
+											<a href="" class="swiper-slide__button swiper-slide__button_hidden button">КУПИТЬ</a>
+											<span>48 тыс.р.</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="main-slider__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<img src="@img/main-page/slider/slide1.jpg" alt="">
+									<div class="swiper-slide__container swiper-slide__container_slide">
+										<h3 class="swiper-slide__title">Ножи «Tuotown» – это главный инструмент</h3>
+										<p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam omnis quam voluptas officia, dolorem esse. Temporibus vero eligendi quibusdam, repudiandae illo est voluptatibus, quod pariatur adipisci, non veniam modi at.</p>
+										<a href="" class="swiper-slide__button">ПОДРОБНЕЕ</a>
+										<div class="swiper-slide__hidden">
+											<a href="" class="swiper-slide__button swiper-slide__button_hidden button">КУПИТЬ</a>
+											<span>48 тыс.р.</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="main-slider__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<img src="@img/main-page/slider/slide3.jpg" alt="">
+									<div class="swiper-slide__container swiper-slide__container_slide">
+										<h3 class="swiper-slide__title">Исключительное качество без компромиссов</h3>
+										<p class="swiper-slide__text">Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства</p>
+										<a href="" class="swiper-slide__button">ПОДРОБНЕЕ</a>
+										<div class="swiper-slide__hidden">
+											<a href="" class="swiper-slide__button swiper-slide__button_hidden button">КУПИТЬ</a>
+											<span>48 тыс.р.</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="main-slider__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<img src="@img/main-page/slider/slide4.jpg" alt="">
+									<div class="swiper-slide__container swiper-slide__container_slide">
+										<h3 class="swiper-slide__title">Качество без компромиссов</h3>
+										<p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod molestias soluta, nisi ex aperiam obcaecati adipisci, blanditiis recusandae, quam vel est! Dolorem, aspernatur. Commodi veniam repudiandae quas mollitia praesentium. Debitis?</p>
+										<a href="" class="swiper-slide__button">ПОДРОБНЕЕ</a>
+										<div class="swiper-slide__hidden">
+											<a href="" class="swiper-slide__button swiper-slide__button_hidden button">КУПИТЬ</a>
+											<span>48 тыс.р.</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-left"></button>
+						<button type="button" class="swiper-button-right"></button>
+					</div>
+				</section>
+				<div class="categories">
+					<div class="categories__container">
+						<div class="categories__item item-categories">
+							<a href="" class="item-categories__icon"><img src="@img/icons/knifeBig.svg" alt=""></a>
+							<a href="" class="item-categories__name">Кухонные ножи</a>
+						</div>
+						<div class="categories__item item-categories">
+							<a href="" class="item-categories__icon"><img src="@img/icons/foldingKnife.svg" alt=""></a>
+							<a href="" class="item-categories__name">Складные ножи</a>
+						</div>
+						<div class="categories__item item-categories">
+							<a href="" class="item-categories__icon"><img src="@img/icons/sharpner.svg" alt=""></a>
+							<a href="" class="item-categories__name">Точилки для ножей</a>
+						</div>
+						<div class="categories__item item-categories">
+							<a href="" class="item-categories__icon"><img src="@img/icons/accessories.svg" alt=""></a>
+							<a href="" class="item-categories__name">Аксессуары для кухни</a>
+						</div>
+					</div>
+				</div>
+				<section class="catalog">
+					<div class="catalog__container">
+						<div class="catalog__body">
+							<a href="#" class="catalog__advertisement-ibg advertisment-block">
+								<img data-src="@img/main-page/knives1.png" alt="">
+								<div class="advertisment-block__title">Познакомьтесь с коллекцией ножей TUOTOWN</div>
+							</a>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife2.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+									<p class="goods-card__price">850 р.</p>
+									<p class="goods-card__description">Новинка</p>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife3.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+									<p class="goods-card__price">12 850 р.</p>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife4.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+									<p class="goods-card__price">850 р.</p>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife5.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+									<p class="goods-card__price">12 850 р.</p>
+								</div>
+							</div>
+							<a href="" class="catalog__advertisment-small-ibg advertisment-small-block">
+									<img data-src="@img/main-page/knives6.png" alt="">
+									<div class="advertisment-small-block__title">INSTAGRAM</div>
+							</a>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife5.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+									<p class="goods-card__price">12 850 р.</p>
+								</div>
+							</div>
+							<div class="catalog__subscribe subscribe-block">
+								<div class="subscribe-block__title">Узнавайте первым о новинках и новостях</div>
+								<div class="subscribe-block__input">
+									<input autocomplete="off" type="email" name="email" data-error="Ошибка" placeholder="Ваш e-mail" class="input-email">
+									<button data-popup='#popup-email' type="submit"></button>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife2.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+									<p class="goods-card__price">850 р.</p>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife5.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+									<p class="goods-card__price">12 850 р.</p>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife2.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+									<p class="goods-card__price">850 р.</p>
+								</div>
+							</div>
+							<div class="catalog__item goods-card">
+								<a href="" class="goods-card__image-ibg_contain">
+									<img data-src="@img/main-page/knife5.png" alt="">
+									<div class="goods-card__add-icon"></div>
+								</a>
+								<div class="goods-card__information">
+									<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+									<p class="goods-card__price">12 850 р.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="recommendations">
+					<div class="recommendations__container">
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="submit" class="tabs__title _tab-active">НОВИНКИ</button>
+								<button type="submit" class="tabs__title">ПОПУЛЯРНОЕ</button>	
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<div class="tabs__box">
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife2.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+												<p class="goods-card__price">850 р.</p>
+												<p class="goods-card__description">Новинка</p>
+											</div>
+										</div>
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife3.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+												<p class="goods-card__price">12 850 р.</p>
+												<p class="goods-card__description">Новинка</p>
+											</div>
+										</div>
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife2.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+												<p class="goods-card__price">850 р.</p>
+												<p class="goods-card__description">Новинка</p>
+											</div>
+										</div>
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife3.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+												<p class="goods-card__price">12 850 р.</p>
+												<p class="goods-card__description">Новинка</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="tabs__box">
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife3.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+												<p class="goods-card__price">12 850 р.</p>
+											</div>
+										</div>
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife2.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+												<p class="goods-card__price">850 р.</p>
+											</div>
+										</div>
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife3.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож JJ001-TUO-B</a>
+												<p class="goods-card__price">12 850 р.</p>
+											</div>
+										</div>
+										<div class="goods-card">
+											<a href="" class="goods-card__image-ibg_contain">
+												<img data-src="@img/main-page/knife2.png" alt="">
+												<div class="goods-card__add-icon"></div>
+											</a>
+											<div class="goods-card__information">
+												<a href="" class="goods-card__title">Складной нож SQ01-B</a>
+												<p class="goods-card__price">850 р.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about-us">
+					<div class="about-us__container">
+						<div class="about-us__first-part">
+							<img class="about-us__picture" data-src="@img/main-page/content-main-page/1.png" alt="">
+							<div class='about-us__first-text'>
+								<h3 class="about-us__title">«Tuotown» – легендарные ножи, создающие шедевры</h3>
+								<p>Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных материалов. Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.</p>
+							</div>
+						</div>
+						<div class="about-us__second-part">
+							<div class='about-us__second-text'>
+								<p>Истинная красота ножа — совершённая функциональность и визуальная гармония. Этот предмет издревле сопутствовал человеку: от зари цивилизации до сегодняшних дней. На протяжении всей истории человечества он был верным помощником, незаменимым инструментом и грозным оружием. Предлагаем изделия Hi-end качества по доступным ценам настоящим ценителям японских ножей.</p>
+								<p>Отличительной чертой нашего интернет-магазина являются уникальные торговые предложения, эксклюзивность продукции, неизменно высокое качество и выгодные цены. Осуществляем продажи элитных японских кухонных ножей для профессионалов и любителей. В обширной ассортиментной линейке представлены изделия для различных потребностей и любого бюджета — от столовых приборов до шеф-ножей.</p>	
+								<h4 class="about-us__tagline">Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства</h4>
+							</div>
+							<img class='about-us__picture' data-src="@img/main-page/content-main-page/2.png" alt="">
+						</div>
+					</div>
+				</section>
+				<section class="intresting">
+					<div class="intresting__container">
+						<h3 class="intresting__title">Всё самое интересное о ножах</h3>
+							<div class="intresting__items">
+								<a href="" class="intresting__item article-intresting">
+									<div class="article-intresting__block-ibg">
+										<img data-src="@img/main-page/content-main-page/3.png" alt="">
+										<div class="article-intresting__date">4 августа 2021 19:24</div>
+										<h4 class="article-intresting__title">Традиционные виды японских кухонных ножей</h4>
+									</div>
+								</a>
+								<a href="" class="intresting__item article-intresting">
+									<div class="article-intresting__block-ibg">
+										<img data-src="@img/main-page/content-main-page/4.png" alt="">
+										<div class="article-intresting__date">4 августа 2021 19:24</div>
+										<h4 class="article-intresting__title">Всемирная история режущих клинков — взгляд в прошлое</h4>
+									</div>
+								</a>
+								<a href="" class="intresting__item article-intresting">
+									<div class="article-intresting__block-ibg">
+										<img data-src="@img/main-page/content-main-page/5.png" alt="">
+										<div class="article-intresting__date">4 августа 2021 19:24</div>
+										<h4 class="article-intresting__title">Как ухаживать за японскими кухонными ножами?</h4>
+									</div>
+								</a>
+							</div>
+						
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

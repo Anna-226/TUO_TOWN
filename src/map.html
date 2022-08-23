@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Как проехать" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="map">
+        <div class="map__header header-map">
+          <div class="header-map__container">Карта</div>
+        </div>
+        <div class="map__main-block main-block-map">
+          <div class="main-block-map__container">
+            <div class="main-block-map__search">
+              <div class="main-block-map__input input-map">
+                <input
+                  autocomplete="on"
+                  type="text"
+                  name="form[]"
+                  data-error="Ошибка"
+                  placeholder="Страна, город, улица..."
+                  class="imput-map__field"
+                />
+                <button type="submit" class="imput-map__button"></button>
+              </div>
+              <div class="main-block-map__icons">
+                <button type="submit" class="main-block-map__filter">
+                  <img src="@img/map/icons/1.svg" alt="" />
+                </button>
+                <button type="submit" class="main-block-map__filter">
+                  <img src="@img/map/icons/2.svg" alt="" />
+                </button>
+                <button type="submit" class="main-block-map__filter">
+                  <img src="@img/map/icons/3.svg" alt="" />
+                </button>
+                <button type="submit" class="main-block-map__filter">
+                  <img src="@img/map/icons/4.svg" alt="" />
+                </button>
+                <button type="submit" class="main-block-map__filter">
+                  <img src="@img/map/icons/5.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="main-block-map__map">
+              <div class="main-block-map__map-picture">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7f0c8a04e3791b5d1509190bd47e66034afd2bef8f98bcce392b1d8a834c4f82&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true;apikey=<6792638c-7bcc-466d-9cbb-d02cb435e896>"></script>
+              </div>
+              <div class="main-block-map__adress-list adress-list">
+                <button class="adress-list__button">Найти ближайший</button>
+                <div class="adress-list__items">
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                  <div class="adress-list__item item-adress-list">
+                    <div class="item-adress-list__title">
+                      ТРЦ «АФИМОЛЛ Сити»
+                    </div>
+                    <div class="item-adress-list__text">
+                      <p>г. Москва, Пресненская набережная, д. 2, этаж 1</p>
+                      <p>вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</p>
+                      <p>+7 (968) 999-07-77</p>
+                    </div>
+                    <button type="submit" class="item-adress-list__button">
+                      Проложить маршрут
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="about-us about-us_map">
+          <div class="about-us__container">
+            <div class="about-us__block about-us__first-part">
+              <img class="about-us__picture about-us__picture_map" data-src="@img/map/1.png" alt="" />
+              <div class="about-us__first-text">
+                <h3 class="about-us__title"> Исключительное качество без компромиссов </h3>
+                <p> Ножи «Tuotown» — это главный инструмент поваров и секрет кулинарного мастерства</p>
+              </div>
+            </div>
+            <div class="about-us__block about-us__second-part">
+              <div class="about-us__second-text">
+                <h4 class="about-us__title"> Исключительное качество без компромиссов</h4>
+                <p> Ножи «Tuotown» — это главный инструмент поваров и секрет кулинарного мастерства </p>
+              </div>
+              <img class="about-us__picture about-us__picture_map" data-src="@img/map/2.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="basket__subscribe subscribe-basket">
+          <div class="subscribe-basket__container">
+            <div class="subscribe-block">
+              <div class="subscribe-block__title">Узнавайте первым о новинках и новостях</div>
+              <div class="subscribe-block__input">
+                <input autocomplete="off" type="email" name="email" data-error="Ошибка" placeholder="Ваш e-mail" class="input-email">
+                <button data-popup='#popup-email' type="submit"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>run 

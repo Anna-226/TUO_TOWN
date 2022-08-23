@@ -1,0 +1,16 @@
+.button {
+  position: relative;
+  padding: 16px 34px;
+  border-radius: 27px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #c80000;
+  display: inline-block;
+}
+
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: #c800007c;
+  }
+}

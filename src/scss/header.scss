@@ -1,0 +1,360 @@
+//====================================================================================================
+.header {
+  background-color: #212121;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+
+  // .header__container
+
+  &__container {
+    @include adaptiveValue("min-height", 71, 43, 768, 320, 1);
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__left
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+  }
+
+  // .header__menu
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__icon
+
+  &__icon {
+    width: rem(24);
+    height: rem(24);
+
+    // .header__icon_place
+
+    &_place {
+      background: url("@img/icons/place.svg") center / cover no-repeat;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    // .header__icon_bag
+
+    &_bag {
+      width: rem(20.5);
+      background: url("@img/icons/bag.svg") center / cover no-repeat;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    // .header__icon_letter
+
+    &_letter {
+      background: url("@img/icons/letter.svg") center / cover no-repeat;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      @media (max-width: $mobile) {
+        display: block;
+        position: absolute;
+        top: rem(40);
+        right: rem(100);
+        z-index: 55;
+        @include adaptiveValue("top", 40, 30, 768, 320, 1);
+        @include adaptiveValue("right", 100, 69, 768, 320, 1);
+      }
+    }
+  }
+
+  // .header__phone
+
+  &__phone {
+    padding-left: rem(12);
+    position: relative;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #212121 url("@img/icons/phone.svg") 0 0 / cover no-repeat;
+      opacity: 0;
+    }
+    @media (max-width: $mobile) {
+      width: 24px;
+      height: 24px;
+      overflow: hidden;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    flex: 1 1 auto;
+    text-align: center;
+    @media (max-width: $mobile) {
+      order: 2;
+      text-align: end;
+    }
+  }
+
+  // .header__right
+
+  &__right {
+    @include adaptiveValue("padding-left", 100, 100);
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+    @media (max-width: $mobile) {
+      order: 1;
+      padding-left: rem(25);
+    }
+  }
+  //.header__search
+  &__search {
+  }
+}
+.search {
+  @media (max-width: $mobile) {
+    position: absolute;
+    @include adaptiveValue("top", 40, 30, 768, 320, 1);
+    @include adaptiveValue("right", 48, 15, 768, 320, 1);
+    z-index: 57;
+  }
+  // .search__icon
+
+  &__icon {
+    width: rem(24);
+    height: rem(24);
+    background: url("@img/icons/search.svg") center / cover no-repeat;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    //.search__icon_input
+    &_input {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+    }
+  }
+
+  // .search__input
+
+  &__input {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    padding: 15px 15px;
+    padding-right: 45px;
+    width: 90%;
+    background-color: #212121;
+    z-index: 10;
+    & input {
+      background-color: rgb(224, 221, 221);
+      width: 100%;
+      color: #fff;
+      font-size: rem(22);
+      line-height: 150%;
+      padding-left: rem(15);
+    }
+    .search-open & {
+      display: block;
+    }
+    @media (max-width: $mobile) {
+      top: -20px;
+      right: -10px;
+      @include adaptiveValue("width", 690, 310, 768, 320, 1);
+      width: 650px;
+      z-index: 56;
+      padding-left: 45px;
+    }
+  }
+}
+.menu {
+  // .menu__icon
+
+  &__icon {
+  }
+
+  // .menu__body
+
+  &__body {
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease 0s;
+    z-index: 50;
+    width: 444px;
+    min-height: 100vh;
+    background: url("@img/main-page/menu-bg.jpg") 0 0 / cover no-repeat;
+    padding-top: rem(112);
+    padding-left: rem(48);
+    padding-right: rem(27);
+    padding-bottom: rem(48);
+    &::after {
+      content: "";
+      position: fixed;
+      z-index: 51;
+      top: 0;
+      left: -100%;
+      width: 444px;
+      height: 100px;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 0, 0, 0.7989904579996061) 60%,
+        rgba(0, 0, 0, 0.695349001416973) 84%,
+        rgba(0, 0, 0, 0.2051529229856005) 100%
+      );
+      transition: all 0.5s ease 0s;
+    }
+    .menu-open & {
+      left: 0;
+      overflow: auto;
+      &::after {
+        left: 0;
+      }
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+      @include adaptiveValue("padding-left", 48, 15, 768, 320, 1);
+      @include adaptiveValue("padding-top", 115, 84, 768, 320, 1);
+      &::after {
+        width: 100%;
+        @include adaptiveValue("height", 100, 70, 768, 320, 1);
+      }
+    }
+  }
+
+  // .menu__list
+
+  &__list {
+    font-weight: 500;
+    font-size: rem(18);
+    text-transform: uppercase;
+
+    // .menu__list_shop
+
+    &_shop {
+      line-height: 350%;
+      @include adaptiveValue("margin-bottom", 33, 0);
+      margin-bottom: rem(33);
+      @media (max-width: $mobile) {
+        font-weight: rem(400);
+        font-size: rem(16);
+        line-height: 300%;
+        text-transform: none;
+      }
+    }
+
+    // .menu__list_info
+
+    &_info {
+      font-weight: 600;
+      font-size: rem(15);
+      line-height: 250%;
+      opacity: 0.6;
+    }
+  }
+
+  // .menu__item
+
+  &__item {
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #c80000;
+      }
+    }
+    // .menu__item_small
+
+    &_small {
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+  }
+}
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+  width: rem(24);
+  height: rem(24);
+  position: relative;
+  z-index: 53;
+  
+  &::before {
+    transition: all 0.3s ease 0s;
+    z-index: 53;
+    content: "";
+    width: rem(24);
+    height: rem(24);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("@img/icons/ellipses.svg") center / cover no-repeat;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      &::before {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .menu-open & {
+    position: static;
+    &::before {
+      transition: all 0.3s ease 0s;
+      position: absolute;
+      top: 48px;
+      left: 48px;
+      background: url("@img/icons/arrowLeft.svg") 0 0 / cover no-repeat;
+      @media (max-width: $mobile) {
+        @include adaptiveValue("top", 40, 30, 768, 320, 1);
+        @include adaptiveValue("left", 48, 15, 768, 320, 1);
+      }
+    }
+  }
+}
